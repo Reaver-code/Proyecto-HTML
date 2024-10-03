@@ -23,9 +23,15 @@
   </figure>
   <nav>
     <ul>
-      <li>Home</li>
+      <li>Home <- Estas aquí</li>
       <li><a href="quienessomos.html">Quienes somos</a></li>
-      <li><a href="cursos.html">Cursos</a></li>
+      <details open>
+        <summary><a href="cursos.html">Cursos</a></summary>
+        <ul>
+            <li><a href="cursos/curso_fullstack.html"></a>Full Stack</li>
+            <li><a href="">Inteligencia Artificial</a></li>
+        </ul>
+    </details>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="registro.html">Registro</a></li>
       <li><a href="login.html">Login</a></li>
@@ -61,7 +67,7 @@
         <article>
           <h3>Master de desarrollo FullStack</h3>
           <p>Empieza tu carrera de desarrollador FullStack con nuestro Master! <br>
-            <a href="cursos.html">Ver Curso</a></p>
+            <a href="cursos/curso_fullstack.html">Ver Curso</a></p>
         </article>
       </li>
     <li>
@@ -69,7 +75,7 @@
       <p>La IA lo esta petando, es hora de que tu también lo petes. <br>
         Con nuestro curso de desarrollo en inteligencia artificial estarás por delante de la competencia! <br> 
         <!-- utilicé un <br> en vez de otro <p> porque el interlineado es menor y queda mejor-->
-        <a href="cursos.html">Ver Curso</a></p>
+        <a href="cursos/curso_ia.html.html">Ver Curso</a></p>
     </li>
     <li>
       <a href="cursos.html">Ver todos los cursos</a>
@@ -78,7 +84,7 @@
   </section>
 
   <section>
-    <h2>Últimas Noticias</h2>
+    <h2>Blog: Últimas Noticias</h2>
     <p>
       Estate al tanto de las ultimas noticias y artículos de interés traídos de la mano de nuestro equipo.
     </p>
