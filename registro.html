@@ -21,22 +21,70 @@
     <figure>
       <a href="index.html"><img src="img/common/cb-logo.png" alt="ConqueBlocks logotipo"></a>
     </figure>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="quienessomos.html">Quienes somos</a></li>
-      <li><a href="cursos.html">Cursos</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li>Registro <- Estas aquí</li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quienessomos.html">Quienes somos</a></li>
+        <li>
+          <details>
+              <summary><a href="cursos.html">Cursos</a></summary>
+              <ul>
+                  <li><a href="cursos/curso_fullstack.html">Full Stack</a></li>
+                  <li><a href="cursos/curso_ia.html.html">Inteligencia Artificial</a></li>
+              </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+          <summary><a href="blog.html">Blog</a></summary>
+          <ul>
+            <li><a href="articulos/noticia1.html">Desarrollo Full-Stack para perfiles Junior</a></li>
+            <li><a href="articulos/noticia2.html">El Desarrollador Full Stack Marketer: Un Híbrido Innovador en la Era Digital</a></li>
+          </ul>
+          </details>
+        </li>
+        <li>Registro <-- Estas aquí</li>  
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
+  <main>
+    <h1>Regístrate y forma parte del equipo</h1>
+      <p>Para poder acceder a la plataforma y poder recibir las ultimas noticias y ofertas regístrate.</p>
+    <form action="post" enctype="multipart/form-data" >
+      <p>
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" name="name" id="name">
+      </p>
+      <p>
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento">
+      </p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      <p>
+        <label for="direccion">Dirección</label>
+        <input type="text" name="direccion" id="direccion">
+      </p>
+      <p>
+        <label for="web">Página Web</label>
+        <input type="url" name="url" id="url">
+      </p>
+      <p>
+        <label for="foto">Foto</label>
+        <input type="file" name="foto" id="foto">
+      </p>
+      <p>
+        <label for="biografia">biografia</label>
+        <textarea name="biografia" id="biografia" col="30" rows="5"></textarea>
+      </p>
+      <p><button>Enviar formulario</button></p>
+    </form>
+</main>
   <footer>
-    <p>
-      Copyright (mentira no tengo) © 2024 <br>
-      By Reaver based on <a href="https://www.conquerblocks.com/">ConquerBlocks</a>
+    <p>Crapyright © 2024 - By Reaver, based on <a href="https://www.conquerblocks.com/" target="_blank">ConquerBlocks</a> <br>
+    <a href="aviso-legal.html">Aviso Legal</a>
     </p>
   </footer>
 </body>
