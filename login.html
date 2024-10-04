@@ -21,23 +21,51 @@
     <figure>
       <a href="index.html"><img src="img/common/cb-logo.png" alt="ConqueBlocks logotipo"></a>
     </figure>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="quienessomos.html">Quienes somos</a></li>
-      <li><a href="cursos.html">Cursos</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="registro.html">Registro</a></li>
-      <li>Login <- Estas aquí</li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quienessomos.html">Quienes somos</a></li>
+        <li>
+          <details>
+              <summary><a href="cursos.html">Cursos</a></summary>
+              <ul>
+                  <li><a href="cursos/curso_fullstack.html">Full Stack</a></li>
+                  <li><a href="cursos/curso_ia.html.html">Inteligencia Artificial</a></li>
+              </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+          <summary><a href="blog.html">Blog</a></summary>
+          <ul>
+            <li><a href="articulos/noticia1.html">Desarrollo Full-Stack para perfiles Junior</a></li>
+            <li><a href="articulos/noticia2.html">El Desarrollador Full Stack Marketer: Un Híbrido Innovador en la Era Digital</a></li>
+          </ul>
+          </details>
+        </li>
+        <li><a href="registro.html">Registro</a></li>  
+        <li>Login <-- Estas aquí</li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
-  <footer>
+  <main>
+  <h1>Introduce tus datos de registro para entrar en la plataforma:</h1>
+  <form action="get" enctype="text/plain">
     <p>
-      Copyright (mentira no tengo) © 2024 <br>
-      By Reaver based on <a href="https://www.conquerblocks.com/">ConquerBlocks</a>
+      <label for="email_login">Introduce tu email</label>
+      <input required type="email" name="email_login" id="email_login">
     </p>
+    <p>
+      <label for="contraseña">Contraseña</label>
+      <input required type="password" name="contraseña" id="contraseña">
+    </p>
+    <button>Entrar</button>
+  </form>
+  </main>
+  <footer>
+    <p>Crapyright © 2024 - By Reaver, based on <a href="https://www.conquerblocks.com/" target="_blank">ConquerBlocks</a></p>
+    <p><a href="aviso-legal.html">Aviso Legal</a></p>
   </footer>
 </body>
 
